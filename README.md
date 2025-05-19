@@ -56,7 +56,7 @@ movix/
   
 🛠️ Installation
 <pre>
-git clone https://github.com/your-username/movix.git
+git clone https://github.com/shanikauwu1/movix.git
 cd movix
 npm install
 npm run dev
