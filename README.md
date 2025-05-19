@@ -55,15 +55,15 @@ movix/
 </pre>
   
 🛠️ Installation
-
+<pre>
 git clone https://github.com/your-username/movix.git
 cd movix
 npm install
 npm run dev
-
+</pre>
 You’ll need a TMDB API key. Create a .env file and add:
 
-VITE_TMDB_API_KEY=your_api_key
+<pre>VITE_TMDB_API_KEY=your_api_key</pre>
 
 🔗 Live Demo
 [View Live](https://shanikacode.in/movix/)
