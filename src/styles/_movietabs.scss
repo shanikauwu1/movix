@@ -1,0 +1,21 @@
+.movie-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .tab-buttons button {
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}

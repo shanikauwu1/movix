@@ -1,0 +1,100 @@
+.movie-card-wrapper {
+  position: relative;
+  width: 250px;
+  margin: 16px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card-container {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.movie-card-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.movie-card-wrapper:hover .movie-card-poster {
+  transform: scale(1.05);
+}
+
+/* Keep FavoriteButton visible and position it */
+.movie-card-wrapper > .favorite-button {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  z-index: 10;
+}
+
+/* Movie info overlay (hidden initially, shown on hover) */
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 12px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+  font-size: 0.9rem;
+  border-radius: 0 0 12px 12px;
+  height: 95%;
+}
+
+.movie-card-wrapper:hover .movie-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Movie info text styles */
+.movie-rating {
+  font-weight: bold;
+  margin-top: 8rem;
+  background-color: $button-bg;
+  color: $text-dark;
+  padding: 0.2rem;
+  max-width: fit-content;
+}
+
+.movie-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.movie-card-summary {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.movie-details {
+  font-size: 12px;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+/* More Info button */
+.movie-more-button {
+  padding: 6px 10px;
+  font-size: 13px;
+  background-color: $button-bg;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: $text-dark;
+  transition: background-color 0.2s ease;
+}
+
+.movie-more-button:hover {
+  background-color: $text-dark;
+  color: $bg-light;
+}

@@ -1,0 +1,41 @@
+header {
+  background-color: $bg-light;
+  color: $text-color;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 199;
+  height: 6rem;
+  border-bottom: 3px solid $text-color;
+
+  img {
+    width: 8rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    color: $secondary-color;
+    font-size: 2.5rem;
+
+    a {
+      font-weight: 800;
+      color: $secondary-color;
+    }
+  }
+}
+
+header a {
+  color: $text-color;
+}
+
+@media screen and (min-width: 51.25rem) {
+  header {
+    img {
+      width: 10rem;
+    }
+  }
+}

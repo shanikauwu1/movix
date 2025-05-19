@@ -1,0 +1,36 @@
+.movie-display {
+  margin: 2rem auto;
+
+  .movies-container {
+    display: grid;
+    grid-template-columns: 1fr; // Mobile first
+    gap: 1rem;
+  }
+}
+
+// ≥768px (48rem): Tablet
+@media screen and (min-width: 48rem) {
+  .movie-display {
+    .movies-container {
+      grid-template-columns: repeat(2, 1fr); // 3columns for tablets
+    }
+  }
+}
+
+// ≥1024px (64rem): Desktop
+@media screen and (min-width: 64rem) {
+  .movie-display {
+    .movies-container {
+      grid-template-columns: repeat(4, 1fr); // 4columns for medium desktops
+    }
+  }
+}
+
+// ≥1200px: Large Desktop
+@media screen and (min-width: 75rem) {
+  .movie-display {
+    .movies-container {
+      grid-template-columns: repeat(5, 1fr); // 5 columns for large screens
+    }
+  }
+}

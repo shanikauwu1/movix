@@ -1,0 +1,16 @@
+footer {
+  background-color: $secondary-color;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  color: $text-dark;
+
+  img {
+    width: 10rem;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: $text-dark;
+  }
+}

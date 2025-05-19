@@ -1,0 +1,45 @@
+.favorite-button {
+  all: unset; // Reset default styles
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(255, 60, 87, 0.15);
+    transform: scale(1.1);
+  }
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke-width: 2;
+  transition: transform 0.2s ease-in-out;
+
+  &.empty,
+  &.filled {
+    stroke: #f90303;
+  }
+
+  &.filled {
+    fill: #f90303;
+    stroke: #f90303;
+  }
+}
